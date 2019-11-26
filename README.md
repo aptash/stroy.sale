@@ -13,4 +13,4 @@
 - Redux
 - Redux Saga
 - Styled-components
-- [MaterialUI](https://material-ui.com/)
+- [Material-UI](https://material-ui.com/)
