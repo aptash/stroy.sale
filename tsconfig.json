@@ -2,9 +2,13 @@
   "compilerOptions": {
     "target": "es5",
     "lib": [
+      "es6",
       "dom",
       "dom.iterable",
       "esnext"
+    ],
+    "plugins": [
+      { "name": "typescript-tslint-plugin" }
     ],
     "allowJs": true,
     "skipLibCheck": true,
@@ -17,7 +21,10 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react"
+    "jsx": "react",
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "strictNullChecks": true
   },
   "include": [
     "src"

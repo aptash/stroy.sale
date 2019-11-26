@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans&display=swap');
+
+.ReactTable .rt-thead.-header {
+  box-shadow: none;
+  background: #F3F3F3;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;  
+  border-bottom: 1px solid #E6E6E6;  
+  color: #4F525A;
+}
+
+.ReactTable .rt-tbody {
+  color: #364657;
+  text-align: center;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 150%;
+}
+
+.ReactTable .rt-thead .rt-th
+, .ReactTable .rt-thead .rt-td
+, .ReactTable .rt-th
+, .ReactTable .rt-td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ReactTable .rt-thead .rt-th
+, .ReactTable .rt-thead .rt-td
+, .ReactTable .rt-tbody .rt-tr-group
+, .ReactTable .rt-tbody .rt-td {
+  border-right-color: #E6E6E6;
+}
+
+.ReactTable .rt-tbody .rt-tr-group {
+  border-bottom-color: #E6E6E6;
+}
+
+.ReactTable {
+  border-color: #E6E6E6;
+}
+
+.ReactTable .rt-thead .rt-th:last-child
+, .ReactTable .rt-thead .rt-td:last-child
+, .ReactTable .rt-tbody .rt-td:last-child {
+  border-right: 1px solid #E6E6E6;
+}
