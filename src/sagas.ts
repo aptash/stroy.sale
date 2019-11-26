@@ -17,7 +17,7 @@ function* login({ email, password }: IReduxLoginAction) {
   // };
 
   const json = yield call(async () => {
-    const response = await fetch('http://my-json-server.typicode.com/aptash/my-json-server/login');
+    const response = await fetch('https://my-json-server.typicode.com/aptash/my-json-server/login');
     return await response.json();
   });
   yield localStorage.setItem('isAuthenticated', 'true');
@@ -42,7 +42,7 @@ function* logoutWatcher() {
 function* getCalculation() {
   const json = yield call(async () => {
     const response = await fetch(
-      'http://my-json-server.typicode.com/aptash/my-json-server/calculations'
+      'https://my-json-server.typicode.com/aptash/my-json-server/calculations'
     );
     return await response.json();
   });
