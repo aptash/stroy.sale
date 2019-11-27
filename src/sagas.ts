@@ -2,10 +2,6 @@ import { put, takeLatest, all, call } from 'redux-saga/effects';
 import { EReduxActionTypes } from './reducer';
 import { IReduxLoginAction } from './actions';
 
-export function* helloSaga() {
-  yield console.log('Hello Sagas!');
-}
-
 function* login({ email, password }: IReduxLoginAction) {
   // на самом деле надо делать метод POST, но my-json-server.typicode.com не возвращает JSON по методу POST
   // const init = {
@@ -57,5 +53,5 @@ function* calculationWatcher() {
 }
 
 export default function* rootSaga() {
-  yield all([helloSaga(), loginWatcher(), logoutWatcher(), calculationWatcher()]);
+  yield all([loginWatcher(), logoutWatcher(), calculationWatcher()]);
 }
